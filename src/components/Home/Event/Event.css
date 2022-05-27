@@ -1,0 +1,38 @@
+.event-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:40px;
+}
+
+.event{
+    position: relative;
+}
+
+.eventName{
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    padding: 23px 0px;
+    color: white;
+    font-weight: 600;
+}
+
+.color1{
+  background-color: #ffbd3e;
+}
+
+.color2{
+    background-color: #ff7044;
+}
+
+.color3{
+    background-color: #3f90fc;
+}
+
+.color4{
+    background-color: #421fcf;
+}

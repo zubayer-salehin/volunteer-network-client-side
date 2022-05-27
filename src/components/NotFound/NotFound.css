@@ -1,0 +1,32 @@
+.notFound-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.notFound-wrapper{
+    margin-top:50px;
+    margin-bottom: 62px;
+    width:450px;
+    height:350px;
+    background-color: #ffbd3e;
+    color:#fff;
+}
+
+.notFound-wrapper h1{
+    margin-bottom: 2rem;
+    margin-top:2rem;
+   font-size: 80px;
+}
+.notFound-wrapper h5{
+    margin-bottom: 1rem;
+   font-size: 22px;
+}
+.notFound-wrapper button{
+    padding: 15px 25px;
+    border:none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor:pointer;
+}

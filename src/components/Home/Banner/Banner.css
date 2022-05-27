@@ -1,0 +1,13 @@
+.inputGroup{
+    width:375px;
+}
+
+.search{
+    background-color: #3f90fc;
+    border-color: #3f90fc;
+    height:40px
+}
+
+.searchInput:focus{
+   box-shadow:none;
+}
