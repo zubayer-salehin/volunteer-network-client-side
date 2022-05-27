@@ -11,7 +11,6 @@ import { ToastContainer } from 'react-toastify';
 import ManageEvent from './components/ManageEvents/ManageEvent';
 import AddEvent from './components/AddEvent/AddEvent';
 import NotFound from './components/NotFound/NotFound';
-import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -27,7 +26,6 @@ function App() {
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
-        <Route path='/footer' element={<Footer></Footer>}></Route>
       </Routes>
       <ToastContainer></ToastContainer>
     </div>
