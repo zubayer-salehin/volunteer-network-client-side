@@ -13,7 +13,7 @@ const Checkout = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get(`https://quiet-journey-29484.herokuapp.com/event/${id}`)
+        axios.get(`https://volunteer-network-server-side.onrender.com/event/${id}`)
             .then(response => {
                 const {data} = response
                 setSelectEvent(data);
@@ -31,7 +31,7 @@ const Checkout = () => {
             phone: e.target.phone.value
         }
 
-        axios.post("https://quiet-journey-29484.herokuapp.com/order", selectEventUserInfo)
+        axios.post("https://volunteer-network-server-side.onrender.com/order", selectEventUserInfo)
             .then(response => {
                 const { data } = response;
                 if (data.insertedId) {

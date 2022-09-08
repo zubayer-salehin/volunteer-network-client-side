@@ -8,7 +8,7 @@ const ManageEvent = () => {
     const handleEventDelete = (id) => {
         const procced = window.confirm(`Are you sure you want delete this user`);
         if (procced) {
-            fetch(`https://quiet-journey-29484.herokuapp.com/event/${id}`, {
+            fetch(`https://volunteer-network-server-side.onrender.com/event/${id}`, {
                 method: 'DELETE',
             })
                 .then(res => res.json())

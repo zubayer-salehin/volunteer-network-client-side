@@ -20,7 +20,7 @@ const AddEvent = () => {
             color: select
         }
 
-        axios.post("https://quiet-journey-29484.herokuapp.com/event", addEventInfo)
+        axios.post("https://volunteer-network-server-side.onrender.com/event", addEventInfo)
             .then(response => {
                 const { data } = response;
                 if (data.insertedId) {

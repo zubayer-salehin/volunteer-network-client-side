@@ -11,7 +11,7 @@ const BookingEvent = () => {
     useEffect(() => {
         const email = user.email
         console.log(email);
-        axios.get(`https://quiet-journey-29484.herokuapp.com/orders?email=${email}`)
+        axios.get(`https://volunteer-network-server-side.onrender.com/orders?email=${email}`)
             .then(response => {
                 const { data } = response;
                 setEvents(data)
@@ -21,7 +21,7 @@ const BookingEvent = () => {
     const handleEventDelete = (id) => {
         const procced = window.confirm(`Are you sure you want delete this user`);
         if (procced) {
-            fetch(`https://quiet-journey-29484.herokuapp.com/orders/${id}`, {
+            fetch(`https://volunteer-network-server-side.onrender.com/orders/${id}`, {
                 method: 'DELETE',
             })
                 .then(res => res.json())
